@@ -22,7 +22,6 @@ namespace _1
 
             D = B * B - 4 * A * C;
 
-
             Console.WriteLine("D = " + D);
             if (D < 0)
                 Console.WriteLine("Корней нет");
