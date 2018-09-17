@@ -14,11 +14,11 @@ namespace _1
             double D, x1, x2;
 
             Console.WriteLine("Введите A: ");
-            A = int.Parse(Console.ReadLine());
+            while (!int.TryParse(Console.ReadLine(), out A)) { Console.WriteLine("Неверное значение A"); };
             Console.WriteLine("Введите B: ");
-            B = int.Parse(Console.ReadLine());
+            while (!int.TryParse(Console.ReadLine(), out B)) { Console.WriteLine("Неверное значение В"); };
             Console.WriteLine("Введите C: ");
-            C = int.Parse(Console.ReadLine());
+            while (!int.TryParse(Console.ReadLine(), out C)) { Console.WriteLine("Неверное значение С"); };
 
             D = B * B - 4 * A * C;
 
